@@ -9,7 +9,7 @@ const App = () => {
   return (
     <div className="App">
       <Header />
-      <Contact contactList={contacts} />
+      <Contact daftarKontak={contacts} />
     </div>
   );
 };

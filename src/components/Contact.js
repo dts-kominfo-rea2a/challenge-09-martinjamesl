@@ -12,9 +12,9 @@ const Contact = ({ daftarKontak }) => {
         flexDirection: "column",
       }}
     >
-      {daftarKontak?.map((list) => (
+      {daftarKontak?.map((daftar) => (
         <div
-          key={list["name"]}
+          key={daftar["name"]}
           style={{
             backgroundColor: "blueviolet",
             width: "500px",
@@ -26,15 +26,15 @@ const Contact = ({ daftarKontak }) => {
         >
           <div style={{ display: "flex", gap: "15px", flex: "1" }}>
             <img
-              src={list["photo"]}
+              src={daftar["photo"]}
               style={{ height: "150px", width: "100%", borderRadius: "50%" }}
             />
           </div>
 
           <div style={{ flex: "2" }}>
-            <h1>{list["name"]}</h1>
-            <p>{list["phone"]}</p>
-            <p>{list["email"]}</p>
+            <h1>{daftar["name"]}</h1>
+            <p>{daftar["phone"]}</p>
+            <p>{daftar["email"]}</p>
           </div>
         </div>
       ))}
