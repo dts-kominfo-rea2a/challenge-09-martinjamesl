@@ -3,13 +3,11 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header className="header-container">
-      <h1 className="title">call a friend</h1>
-      <p className="desc">your friendly contact app</p>
-      <span className="divider" style={{ color: "#c97e1d " }}>
-        {"*".repeat(70)}
-      </span>
-    </header>
+    <div>
+      <h1>Call a Friend</h1>
+      <p>your friendly contact app</p>
+      <hr></hr>
+    </div>
   );
 };
 
